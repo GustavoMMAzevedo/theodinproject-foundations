@@ -8,6 +8,11 @@
     <body>
         <h1>Homepage</h1>
         <!-- absolute reference is the example below where you include the https:// -->
+        <!-- target=_blank" means that the link will open a new page -->
+        <!-- rel="noopener noreferrer" is a safe system so that other don't know where the link was created 
+        an it is good practice to include on all links! -->
+        <p>ABSOLUTE REFERENCE EXAMPLE</p>
+        <p>With link opening on a new page</p>
         <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click me</a>
         
         <!-- relative references is for files inside your directory -->
@@ -21,9 +26,11 @@ Relative links like ./shops/coffee_shop.html are directions from the current roo
 to another room (the museum shop). Absolute links, on the other hand, are full directions including the protocol (https), 
 domain name (town.com) and the path from that domain name 
 (/museum/shops/coffee_shop.html): https://town.com/museum/shops/coffee_shop.html. -->
-
+        <p>RELATIVE REFERENCE</p>
+        <p>With link opening on the same page</p>
         <p><a href="./pages/about.html">About</a></p>
-
+        
+        <p>INCLUDING PICTURES</p>
         <img src="./images/dog.jpg">
         <img src="./images/dog.jpg">
 
