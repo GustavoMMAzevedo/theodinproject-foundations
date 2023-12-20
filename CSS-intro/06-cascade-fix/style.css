@@ -7,10 +7,14 @@ body {
     color: hsl(0, 0%, 0%);
     font-weight: 800;
   }
-  
-  .small-para {
+  /* I have chained the classes .para and .small-para
+  because in the html file the class "para small-para" exists 
+  and for that we need use the chaining selectors drill since this class 
+  is a combination of the 2 selectors .para and .small-para */
+  .para.small-para {
     font-size: 14px;
-    font-weight: 800;
+    /* removed the bold font-weight as it is already
+    applied above */
   }
   
   .para {
