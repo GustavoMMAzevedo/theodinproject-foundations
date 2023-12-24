@@ -21,12 +21,17 @@ body {
     font-size: 22px;
   }
   
-  .confirm {
+  .confirm.button {
     background: green;
     color: white;
     font-weight: bold;
   } 
-  
+  /* To fix the confirm button to show green on HTML
+  I have used the chaining selectors so that only the class
+  with .button and .confirm selectors on it.
+  If we try to use the group selectors for this all the 
+  classes that have .confirm and .button on it will be affeted 
+  and this is not what we want in this exercise. */
   .button {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
