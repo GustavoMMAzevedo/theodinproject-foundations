@@ -38,13 +38,17 @@ body {
     font-size: 20px;
   }
   
-  .child {
+  /* To fix the text on lines 17 to 19 I have used the descendent combinator
+  .text . child
+  
+    Since child is nested inside .text it would only affect his style.*/
+  .text .child {
     color: rgb(0, 0, 0);
     font-weight: 800;
     font-size: 14px;
   }
   
-  div.text {
+  .text{
     color: rgb(0, 0, 0);
     font-size: 22px;
     font-weight: 100;
