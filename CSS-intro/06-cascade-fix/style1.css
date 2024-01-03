@@ -8,14 +8,32 @@ body {
     font-weight: 800;
   }
   
+  .para { 
+    font-size: 22px;
+  }
+
   .small-para {
     font-size: 14px;
     font-weight: 800;
   }
   
-  .para {
+  /*
+    1 - We have moved the .small-para from its original position.
+    2 - Then we placed after .para selector, taking advantage of the rule order
+    since both selectors have the same specificity, meaning they have have the same 
+    amount of classes. 
+    3 - The rule before was:
+        - The grouping selector was giving color and font-weight to any element with 
+        .para or .small-para as a class (no issue there)
+        - After the above the .small-para selector was giving font-size 14 px and font-weight
+        - After the above the .para selector was giving the font-size 22px
+        - With the order above the because the HTML line 12 have both .para and .small-para as classes
+        there was a conflict with the font-size and since the cascade have run through every other factor
+        (including inheritance and specificity) the RULE ORDER was applied, meaning that the last rule .para 
+        was the one taken into account.
+    .para { 
     font-size: 22px;
-  }
+  }*/
   
   .confirm {
     background: green;
