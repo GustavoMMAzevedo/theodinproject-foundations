@@ -76,14 +76,33 @@ body {
     font-weight: bold;
   } 
 
-  .child {
-    color: rgb(0, 0, 0);
-    font-weight: 800;
-    font-size: 14px;
+  /* First we removed the following rule from its original position 
+  and added another selector to it to form a descendant combinator
+
+    .child { 
+      color: rgb(0, 0, 0);
+      font-weight: 800;
+      font-size: 14px;
   }
-  
+
+  Another solution would be to keep the rule where it is and just replace the 
+  .div selector with the .text selector
+
+     .text .child {
+       color: rgb(0, 0, 0);
+       font-weight: 800;
+       font-size: 14px;
+  }
+
+   */
   div.text {
     color: rgb(0, 0, 0);
     font-size: 22px;
     font-weight: 100;
   }
+
+  div .child { 
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 14px;
+}
