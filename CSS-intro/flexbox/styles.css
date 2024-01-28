@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid;
 }
 
 .menu-container {
@@ -26,4 +27,18 @@
 
 .login {
     margin-left: 20px;
+}
+
+.header-container {
+    color: #5995da;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
 }
